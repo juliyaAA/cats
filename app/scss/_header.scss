@@ -1,0 +1,69 @@
+.header {
+    background: url("../img/header-fon.jpg") center center/cover no-repeat;
+    position: relative;
+    padding: 39px 0 65px;
+    &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(31, 32, 33, 0.79);
+        z-index: 2;
+    }
+    &-menu {
+        display: none;
+    }
+    &__inner {
+        position: relative;
+        z-index: 3;
+    }
+    &__top {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        max-width: 640px;
+        width: 100%;
+    }
+    &__list {
+        margin-top: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        li + li {
+            margin-left: 80px;
+        }
+        a {
+            font-size: 18px;
+            line-height: 22px;
+            transition: 0.5s all;
+            &:hover {
+                color: #6ebbd3;
+            }
+        }
+    }
+    &__phone {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+    }
+    &__text {
+        font-size: 18px;
+        line-height: 22px;
+        margin-top: 3px;
+        text-align: right;
+    }
+    &__contact {
+        margin-top: 10px;
+    }
+    &__count {
+        margin-top: 49px;
+        font-weight: bold;
+        font-size: 38px;
+        line-height: 46px;
+    }
+}
