@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    new isvek.Bvi({
+        target: '.bvi-panel-open',
+        fontSize: 24,
+        theme: 'black'
+    });
     $(window).scroll(function () {
         if ($(this).scrollTop() > 500) {
             $('.pageup').fadeIn();
